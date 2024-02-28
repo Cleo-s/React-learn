@@ -1,25 +1,5 @@
-.button.constructive {
-    background-color: green;
-    border: 1px solid black;
-    border-radius: 3.5px;
-    min-width: 50px;
-    min-height: 50px;
-    margin-right: 5px;
-}
-
-.button.destructive {
-    background-color: red;
-    border: 1px solid black;
-    border-radius: 3.5px;
-    min-width: 50px;
-    min-height: 50px;
-    margin-left: 5px;
-}
-
-.button.reset {
-    background-color: grey;
-    border: 1px solid black;
-    border-radius: 3.5px;
-
-    width: 5.5%;
+.add-task-button {
+    height: 3.35rem;
+    gap: 0.125rem;
+    margin: none;
 }
