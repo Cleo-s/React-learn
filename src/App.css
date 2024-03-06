@@ -1,9 +1,9 @@
-html ,
+html,
 
 body {
     margin: 0;
 
-    background-color: #d4d4d427;
+    background-color: #d4d4d4;
     height: 100%;
 }
 
@@ -33,6 +33,8 @@ body {
     justify-content: space-between;
     align-items: center;
 
+    background-color: #DBD8D4;
+
     margin-top: 0.1rem;
 
     border: 0.1rem solid #000;
@@ -40,4 +42,6 @@ body {
 
     min-width: 55rem;
     min-height: 3rem;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
