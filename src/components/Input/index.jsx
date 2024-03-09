@@ -1,12 +1,13 @@
 import React from 'react';
+
 import './Input.css';
 
-export default function Input({value, onChange}) {
+export default function Input({value, onChange, className, placeholder, type}) {
     return (
         <input 
-        type='text' 
-        placeholder='Write your task' 
-        className='to-do-input'
+        type={type} 
+        placeholder={placeholder}
+        className={className}
         value={value}
         onChange={onChange}
         />

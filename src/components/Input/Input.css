@@ -1,8 +1,8 @@
 .to-do-input {
     width: 50.5rem;
     height: 3rem;
-    margin: none;
-    margin-top: 0.5rem;
+
+    padding: 0.5rem;
 
     border: 0.1rem solid #000;
     border-radius: 0.15rem;

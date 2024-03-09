@@ -1,0 +1,27 @@
+.tasks-table li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #DBD8D4;
+
+    margin-top: 0.1rem;
+
+    border: 0.1rem solid #000;
+    border-radius: 0.15rem;
+
+    min-width: 55rem;
+    min-height: 3rem;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tasks-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+}
