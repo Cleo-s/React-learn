@@ -1,11 +1,16 @@
 .to-do-input {
-    width: 50.5rem;
-    height: 3rem;
+   width: 100%;
 
-    padding: 0.5rem;
+   padding: 0.5rem;
 
-    border: 0.1rem solid #000;
-    border-radius: 0.15rem;
+   box-sizing: border-box;
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   border: 0.1rem solid #000;
+   border-radius: 0.15rem;
+
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+   &:focus {
+      outline: none;
+   }
 }
