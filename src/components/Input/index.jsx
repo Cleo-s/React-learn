@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Input.css';
 
-export default function Input({value, onChange, className, placeholder, type}) {
+export default function Input({value, onChange, className, placeholder, type, checkedTask}) {
     return (
         <input 
         type={type} 

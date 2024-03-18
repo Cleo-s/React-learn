@@ -1,0 +1,14 @@
+.wrapper-div {
+    disaply: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+
+    border: 0.1rem solid black; 
+    border-radius: 0.15rem;
+
+    min-width: 10rem;
+    max-height: 0.1rem;
+}
