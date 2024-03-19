@@ -29,9 +29,9 @@ function Task({ tasks, setTasks, index, task }) {
 
   return (
     <section className="task-section" checkedTask={checkedTask}>
-      <li key={index} className="task">
+      <li key={index} className={`task ${checkedTask ? 'task-checked' : ''}`}>
         <Input type="checkbox" checked={checkedTask} onChange={handleTaskCheck} />
-        <p className="task-label">{task}</p>
+        <p className='task-label'>{task}</p>
         <Button
           className="delete-task-button"
           onClick={() => handleTaskDelete(index)}
