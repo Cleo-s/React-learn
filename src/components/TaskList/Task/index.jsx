@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 import Input from "../../Input/index";
 import Button from "../../Button/index";
+import DropDown from '../DropDown/index';
 
 import "./Task.css";
 
@@ -32,6 +33,7 @@ function Task({ tasks, setTasks, index, task }) {
       <li key={index} className={`task ${checkedTask ? 'task-checked' : ''}`}>
         <Input type="checkbox" checked={checkedTask} onChange={handleTaskCheck} />
         <p className='task-label'>{task}</p>
+        <DropDown />
         <Button
           className="delete-task-button"
           onClick={() => handleTaskDelete(index)}

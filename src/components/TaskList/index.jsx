@@ -1,7 +1,6 @@
 import React from "react";
 
 import Task from "./Task/index";
-import TaskWrapper from '../TaskWrapper/index';
 
 import "./TaskList.css";
 
