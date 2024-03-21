@@ -53,3 +53,23 @@
       height: 60%;
    }
 }
+
+.dropdown-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   position: relative;
+
+   background: none;
+   padding-left: 1.2rem;
+
+   height: 100%;
+   aspect-ratio: 1/1;
+
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+   svg {
+      height: 60%;
+   }
+}

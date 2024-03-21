@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import Button from '../../Button/index';
 
+import ChevronDownIcon from '../../Icons/ChevronDownIcon/index';
 import './DropDown.css';
 
 function DropDown() {
@@ -17,25 +18,25 @@ function DropDown() {
             <Button
             className='dropdown-button'
             onClick={handleDropDown}
-            label='...'
+            icon={<ChevronDownIcon />}
             />
             {openedDropDown ? (
-                <ul>
+                <ul className='dropdown-table'>
                     <li>
                         <Button
-                        className='dropdown-button'
-                        label='Not Ready'
+                        className='pending-dropdown-button'
+                        label='Pending'
                         />
                     </li>
                     <li>
                         <Button
-                        className='dropdown-button'
-                        label='In Progress'
+                        className='working-dropdown-button'
+                        label='Working'
                         />
                     </li>
                     <li>
                         <Button
-                        className='dropdown-button'
+                        className='done-dropdown-button'
                         label='Done'
                         />
                     </li>
