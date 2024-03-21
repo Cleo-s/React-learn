@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
- 
+
     margin: 0;
 
     width: 100%;
@@ -11,25 +11,24 @@
 
 .task {
     box-sizing: border-box;
- 
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 16px;
- 
+
     padding-left: 8px;
- 
+
     background-color: #dbd8d4;
- 
+
     margin-top: 0.1rem;
- 
+
     border: 0.1rem solid #000;
     border-radius: 0.15rem;
- 
+
     height: 3rem;
     width: 100%;
- 
+
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
 }
@@ -38,3 +37,9 @@
     text-decoration: line-through;
     background-color: #C3BDBA;
   }
+
+.delete-task-button {
+    height: 100%;
+
+    padding: 8px;
+}

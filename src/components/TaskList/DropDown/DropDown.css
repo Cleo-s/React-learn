@@ -1,53 +1,56 @@
 .dropdown-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 
-    position: relative;
- 
-    border: none;
-    border-left: 0.1rem solid #000;
-    border-radius: 0.1rem;
- 
-    height: 100%;
-    aspect-ratio: 1/1;
- 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
- 
-    svg {
-       height: 60%;
-    }
- }
+   position: relative;
 
- .dropdown-table {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+   border: none;
+   border-radius: 0.1rem;
 
-    list-style-type: none;
+   height: 100%;
+   aspect-ratio: 1/1;
 
-    position: absolute;
-    bottom: -100%;
- }
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+   svg {
+      height: 60%;
+   }
+}
+
+.dropdown-table {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+
+   list-style-type: none;
+
+   position: absolute;
+   top: 100%;
+}
+
+.dropdown-button {
+   height: 100%;
+
+   padding: 8px;
+}
 
 .pending-dropdown-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 
-    border: 0.1rem solid #000;
-    border-radius: 0.15rem;
+   border: 0.1rem solid #000;
+   border-radius: 0.15rem;
 
-    background-color: transparent;
+   background-color: transparent;
 }
 
 .working-dropdown-button {
-
-    background-color: transparent;
+   background-color: transparent;
 }
 
 .done-dropdown-button {
-
-    background-color: transparent;
+   background-color: transparent;
 }
