@@ -43,12 +43,7 @@ function Task({ tasks, setTasks, index, task }) {
             />
             <p className="task-label">{task}</p>
             <Divider axis={"y"} />
-            <DropDown />
-            {/* <Button
-              className="delete-task-button"
-              onClick={() => handleTaskDelete(index)}
-              icon={<TrashBinIcon />}
-            /> */}
+            <DropDown checkedTask={checkedTask}/>
 
             <Divider axis={"y"} />
             <IconedButton

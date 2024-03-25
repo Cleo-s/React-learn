@@ -1,7 +1,10 @@
 .dropdown-div {
    display: flex;
-   align-items: center;
+   flex-direction: column;
+   align-items: flex-start;
    justify-content: center;
+
+   padding: none;
 
    position: relative;
 
@@ -23,6 +26,8 @@
    flex-direction: column;
    align-items: flex-start;
    justify-content: center;
+
+   padding: 0rem 0rem 0rem 0rem;
 
    list-style-type: none;
 
@@ -46,7 +51,7 @@
    border: 0.1rem solid #000;
    border-radius: 0.15rem;
 
-   background-color: transparent;
+   background-color: #F3F396;
 }
 
 .working-dropdown-button {
@@ -59,7 +64,7 @@
     border: 0.1rem solid #000;
     border-radius: 0.15rem;
  
-    background-color: transparent;
+    background-color: #96D7F3;
 }
 
 .done-dropdown-button {
@@ -72,5 +77,18 @@
     border: 0.1rem solid #000;
     border-radius: 0.15rem;
  
-    background-color: transparent;
+    background-color: #AEF396;
+}
+
+.cancelled-dropdown-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   margin-top: 0.1rem;
+
+   border: 0.1rem solid #000;
+   border-radius: 0.15rem;
+
+   background-color: #F3A096;
 }

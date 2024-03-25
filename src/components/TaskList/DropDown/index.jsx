@@ -2,39 +2,36 @@ import React from "react";
 import { useState } from "react";
 
 import Button from "../../Button/index";
+import StatusUpdate from "../../statusUpdate";
 import { IconedButton } from "../../IconedButton";
-import { Status }  from '../../../enum/status';
+import { Status } from "../../../enum/status";
 
 import ChevronDownIcon from "../../Icons/ChevronDownIcon/index";
 import "./DropDown.css";
 
-function DropDown() {
+function DropDown({ checkedTask }) {
   const [openedDropDown, setOpenedDropDown] = useState(false);
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState("");
 
   const handleDropDown = () => {
     setOpenedDropDown(!openedDropDown);
   };
 
   const handleButtonStatusChange = (currentStatus) => {
-    setStatus(Status[currentStatus]);
+    setStatus(currentStatus);
     setOpenedDropDown(false);
   };
 
   return (
     <div className="dropdown-div">
-      {/* <Button
-            className="dropdown-button"
-            onClick={handleDropDown}
-            icon={<ChevronDownIcon />}
-         /> */} 
-         {status ? <p>{status}</p> : null}
 
-         <IconedButton
-           icon={<ChevronDownIcon />}
-           onClick={handleDropDown}
-           classname={"dropdown-button"}
-         />
+      <IconedButton
+        icon={<ChevronDownIcon />}
+        onClick={handleDropDown}
+        classname={"dropdown-button"}
+      />
+
+      {status && <StatusUpdate status={status} />}
 
       {openedDropDown ? (
         <ul className="dropdown-table">
@@ -57,6 +54,13 @@ function DropDown() {
               className="done-dropdown-button"
               label="Done"
               onClick={() => handleButtonStatusChange(Status.done)}
+            />
+          </li>
+          <li>
+            <Button
+              className="cancelled-dropdown-button"
+              label="Cancelled"
+              onClick={() => handleButtonStatusChange(Status.cancelled)}
             />
           </li>
         </ul>
