@@ -1,14 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import './StatusUpdate.css';
+import "./StatusUpdate.css";
 
 function StatusUpdate({ status }) {
-
-    return (
-        <div className='status-update-div'>
-            <p className='status-paragraph'>{status}</p>
-        </div>
-    )
+  return <p className="status-paragraph">{status}</p>;
 }
 
 export default StatusUpdate;
