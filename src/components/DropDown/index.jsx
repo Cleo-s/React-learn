@@ -1,23 +1,31 @@
 import React from "react";
 import { useState } from "react";
 
-import Button from "../../Button/index";
-import StatusUpdate from "../../statusUpdate";
-import { IconedButton } from "../../IconedButton";
-import { Status } from "../../../enum/status";
 
-import ChevronDownIcon from "../../Icons/ChevronDownIcon/index";
+import DropDownOption from "./DropDowmOption";
+import StatusUpdate from "../statusUpdate";
+import { IconedButton } from "../IconedButton";
+import { Status } from "../../enum/status";
+
+import ChevronDownIcon from "../Icons/ChevronDownIcon/index";
 import "./DropDown.css";
 
-function DropDown({ openedDropDown, setOpenedDropDown }) {
-  const [status, setStatus] = useState("");
+function DropDown({ openedDropDown, setOpenedDropDown, tasks, task }) {
+
+  const dropDownButtonsOptions = [
+  {label: "Pending", status: Status.pending, className: "pending-dropdown-button"}, 
+  {label: "Working", status: Status.working, className: "working-dropdown-button"}, 
+  {label: "Done", status: Status.done, className: "done-dropdown-button"}, 
+  {label: "Cancelled", status: Status.cancelled, className: "cancelled-dropdown-button"}
+]
 
   const handleDropDown = () => {
     setOpenedDropDown(!openedDropDown);
   };
 
   const handleButtonStatusChange = (currentStatus) => {
-    setStatus(currentStatus);
+    const targetTask = tasks.find((taskObj) => taskObj.id === task.id);
+    targetTask.status = currentStatus;
     setOpenedDropDown(false);
   };
 
@@ -28,11 +36,23 @@ function DropDown({ openedDropDown, setOpenedDropDown }) {
         onClick={handleDropDown}
         classname={"dropdown-button"}
       />
-      {status && <StatusUpdate status={status} />}
+      {task.status && <StatusUpdate status={task.status} />}
 
       {openedDropDown ? (
         <section className="dropdown-section">
           <ul className="dropdown-table">
+            {dropDownButtonsOptions.map((option, index) => {
+              return (
+                <DropDownOption
+                  key={index}
+                  label={option.label}
+                  status={option.status}
+                  className={option.className}
+                  onClick={() => handleButtonStatusChange(option.status)}
+                />
+              );
+            })}
+            {/*
             <li>
               <Button
                 className="pending-dropdown-button"
@@ -60,7 +80,7 @@ function DropDown({ openedDropDown, setOpenedDropDown }) {
                 label="Cancelled"
                 onClick={() => handleButtonStatusChange(Status.cancelled)}
               />
-            </li>
+      </li>*/}
           </ul>
         </section>
       ) : null}
