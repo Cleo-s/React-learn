@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 import { ThemeContext } from './components/ThemeContext';
+import Button from './components/Button';
 
 import Home from './pages/home/index';
 
@@ -18,9 +19,9 @@ function App() {
   return (
     <div className="App">
       <ThemeContext.Provider value={theme}>
-        <button onClick={themeToggler}>Choose Theme</button>
-      <Home />
+        <Button onClick={themeToggler} label={'Change Theme'} className={'theme-changer-button'} />
       </ThemeContext.Provider>
+      <Home />
     </div>
   );
 }

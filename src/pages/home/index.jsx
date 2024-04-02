@@ -35,12 +35,13 @@ function Home() {
   };
 
   return (
-    <main className={"home-main"}>
+    <main className=/*{`${theme ? theme : 'home-main'}-theme`}*/'home-main'>
       <TaskCreate
         taskTitle={taskTitle}
         handleTaskAdd={handleTaskAdd}
         setNewTask={setNewTask}
       />
+
       <TaskList tasks={tasks} setTasks={setTasks} />
     </main>
   );

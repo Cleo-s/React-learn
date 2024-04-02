@@ -34,40 +34,16 @@
    }
 }
 
-/* .delete-task-button {
+/*.theme-changer-button {
    display: flex;
+   flex-direction: column;
    align-items: center;
    justify-content: center;
 
-   border: none;
-   border-radius: 0.1rem;
+   position: absolute;
 
-   height: 100%;
-   aspect-ratio: 1/1;
+   margin: 0 auto;
 
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-   svg {
-      height: 60%;
-   }
-} */
-
-/* .dropdown-button {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-
-   position: relative;
-
-   background: none;
-   padding-left: 1.2rem;
-
-   height: 100%;
-   aspect-ratio: 1/1;
-
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-   svg {
-      height: 60%;
-   }
-} */
+   border: 1px solid #000;
+   border-radius: 2px; 
+}*/
