@@ -1,9 +1,10 @@
 import React from "react";
 import { useState, useEffect, useContext } from "react";
 
-import { Status }  from "../../enum/status";
-import { ThemeContext } from "../../components/ThemeContext";
-import TaskList from "../../components/TaskList/index";
+import Button from "../../components/DefaultComponents/Button";
+import { Status } from "../../enum/status";
+import { ThemeContext } from "../../components/OneTimeComponents/ThemeContext";
+import TaskList from "../../components/MainComponents/TaskList/index";
 import TaskCreate from "../../components/TaskCreate/index";
 
 import "./home.css";
@@ -12,7 +13,12 @@ function Home() {
   const storedTasks = JSON.parse(sessionStorage.getItem("tasks")) || [];
   const [tasks, setTasks] = useState(storedTasks);
   const [taskTitle, setNewTask] = useState("");
-  const theme = useContext(ThemeContext);
+  const [theme, setTheme] = useState('light');
+  const currentTheme = useContext(ThemeContext);
+
+  const themeToggler = () => {
+    setTheme(currentTheme === 'light' ? 'dark' : 'light')
+  }
 
   useEffect(() => {
     if (tasks.length > 0)
@@ -35,12 +41,20 @@ function Home() {
   };
 
   return (
-    <main className=/*{`${theme ? theme : 'home-main'}-theme`}*/'home-main'>
+    <main className={`${currentTheme? currentTheme : ""}-theme`}>
       <TaskCreate
         taskTitle={taskTitle}
         handleTaskAdd={handleTaskAdd}
         setNewTask={setNewTask}
       />
+
+      <ThemeContext.Provider value={currentTheme}>
+        <Button
+          onClick={themeToggler}
+          label={"Change Theme"}
+          className={"theme-changer-button"}
+        />
+      </ThemeContext.Provider>
 
       <TaskList tasks={tasks} setTasks={setTasks} />
     </main>

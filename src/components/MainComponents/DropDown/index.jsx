@@ -1,12 +1,11 @@
 import React from "react";
-import { useState } from "react";
 
-import DropDownOption from "./DropDowmOption";
-import StatusUpdate from "../statusUpdate";
-import { IconedButton } from "../IconedButton";
-import { Status } from "../../enum/status";
+import DropDownOption from "./DropDownOption";
+import StatusUpdate from "../../OneTimeComponents/statusUpdate";
+import { IconedButton } from "../../OneTimeComponents/IconedButton";
+import { Status } from "../../../enum/status";
 
-import ChevronDownIcon from "../Icons/ChevronDownIcon/index";
+import ChevronDownIcon from "../../Icons/ChevronDownIcon/index";
 import "./DropDown.css";
 
 function DropDown({ openedDropDown, setOpenedDropDown, tasks, task }) {

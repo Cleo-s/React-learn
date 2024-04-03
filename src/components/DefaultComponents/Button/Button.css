@@ -34,16 +34,24 @@
    }
 }
 
-/*.theme-changer-button {
+.theme-changer-button {
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
 
-   position: absolute;
+   background-color: #F4D6BB;
 
    margin: 0 auto;
 
    border: 1px solid #000;
    border-radius: 2px; 
-}*/
+
+   &:hover {
+      background-color: transparent;
+   }
+
+   &:focus {
+      outline: none;
+   }
+}

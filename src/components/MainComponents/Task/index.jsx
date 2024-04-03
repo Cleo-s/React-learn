@@ -1,14 +1,14 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-import Input from "../../Input/index";
+import Input from "../../../DefaultComponents/Input/index";
 import DropDown from "../../DropDown/index";
 
 import "./Task.css";
 
-import TrashBinIcon from "../../Icons/TrashBinIcon/index";
-import { IconedButton } from "../../IconedButton";
-import { Divider } from "../../Divider";
+import TrashBinIcon from "../../../Icons/TrashBinIcon/index";
+import { IconedButton } from "../../../OneTimeComponents/IconedButton";
+import { Divider } from "../../../DefaultComponents/Divider";
 
 function Task({ tasks, setTasks, index, task }) {
   const [openedDropDown, setOpenedDropDown] = useState(false);

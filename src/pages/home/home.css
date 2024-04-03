@@ -1,4 +1,12 @@
-.home-main {
+
+
+.light-theme {
+   background-color: #dbd8d4;
+   background-image: url(/public/to-do-background.jpg);
+   background-size: cover;
+
+   height: 100vh;
+   width: 100vw;
 
    flex-grow: 1;
    box-sizing: border-box;
@@ -10,10 +18,14 @@
    gap: 64px;
 }
 
-.light-theme {
-
-}
-
 .dark-theme {
 
+   flex-grow: 1;
+   box-sizing: border-box;
+
+   padding: 64px;
+
+   display: flex;
+   flex-direction: column;
+   gap: 64px;
 }

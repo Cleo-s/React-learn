@@ -2,8 +2,8 @@ import React from "react";
 
 import "./TaskCreate.css";
 
-import Button from "../Button/index";
-import Input from "../Input/index";
+import Button from "../DefaultComponents/Button/index";
+import Input from "../DefaultComponents/Input/index";
 import AddTaskIcon from "../Icons/AddTaskIcon";
 
 function TaskCreate({ taskTitle, setNewTask, handleTaskAdd }) {
