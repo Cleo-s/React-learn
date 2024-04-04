@@ -65,6 +65,8 @@
    border-radius: 0.15rem;
 
    background-color: #f3f396;
+   
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .working-dropdown-button {
@@ -76,6 +78,8 @@
    border-radius: 0.15rem;
 
    background-color: #96d7f3;
+
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .done-dropdown-button {
@@ -87,6 +91,8 @@
    border-radius: 0.15rem;
 
    background-color: #aef396;
+
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .cancelled-dropdown-button {
@@ -98,4 +104,106 @@
    border-radius: 0.15rem;
 
    background-color: #f3a096;
+
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-page-sidebar-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border: 1px solid transparent;
+
+   width: 100%;
+   height: 7.5%;
+
+   background-color: rgba(0,2,11,0);
+
+   position: absolute;
+   top: 100px;
+   right: 0;
+
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 40px;
+   color: rgba(101,150,165,255);
+
+   &:hover {
+      background-color: rgba(88,140,161,0.6);
+   }
+}
+
+.login-sidebar-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border: 1px solid transparent;
+
+   width: 100%;
+   height: 7.5%;
+
+   background-color: rgba(0,2,11,0);
+
+   position: absolute;
+   top: 150px;
+   right: 0;
+
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 40px;
+   color: rgba(101,150,165,255);
+
+   &:hover {
+      background-color: rgba(88,140,161,0.6);
+   }
+}
+
+.contact-sidebar-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border: 1px solid transparent;
+
+   width: 100%;
+   height: 7.5%;
+
+   background-color: rgba(0,2,11,0);
+
+   position: absolute;
+   top: 200px;
+   right: 0;
+
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 40px;
+   color: rgba(101,150,165,255);
+
+   &:hover {
+      background-color: rgba(88,140,161,0.6);
+   }
+}
+
+.about-sidebar-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border: 1px solid transparent;
+
+   width: 100%;
+   height: 7.5%;
+
+   background-color: rgba(0,2,11,0);
+
+   position: absolute;
+   top: 250px;
+   right: 0;
+
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 40px;
+   color: rgba(101,150,165,255);
+
+   &:hover {
+      background-color: rgba(88,140,161,0.6);
+   }
 }

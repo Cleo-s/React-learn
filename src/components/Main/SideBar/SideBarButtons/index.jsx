@@ -1,7 +1,8 @@
 import React from "react";
 
-import "./SideBarButtons.css";
 import Button from "../../../Default/Button";
+
+import "./SideBarButtons.css";
 
 function SideBarButtons() {
   const buttonsInterface = [
