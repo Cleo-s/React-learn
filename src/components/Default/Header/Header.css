@@ -1,0 +1,15 @@
+.header-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 42px;
+    width: 100%;
+
+    background-color: rgba(0,2,11,0.6);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}

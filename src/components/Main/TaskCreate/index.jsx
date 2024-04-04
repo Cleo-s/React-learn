@@ -1,10 +1,10 @@
 import React from "react";
 
-import "./TaskCreate.css";
+import './TaskCreate.css';
 
-import Button from "../DefaultComponents/Button/index";
-import Input from "../DefaultComponents/Input/index";
-import AddTaskIcon from "../Icons/AddTaskIcon";
+import Button from "../../Default/Button/index";
+import Input from "../../Default/Input/index";
+import AddTaskIcon from "../../Icons/AddTaskIcon";
 
 function TaskCreate({ taskTitle, setNewTask, handleTaskAdd }) {
    return (

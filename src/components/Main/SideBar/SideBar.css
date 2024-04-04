@@ -1,0 +1,15 @@
+.sidebar-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    min-height: 700px;
+    width: 300px;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    background-color: rgba(0,2,11,0.85);
+}

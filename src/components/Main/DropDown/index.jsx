@@ -1,9 +1,9 @@
 import React from "react";
 
-import DropDownOption from "./DropDownOption";
-import StatusUpdate from "../../OneTimeComponents/statusUpdate";
-import { IconedButton } from "../../OneTimeComponents/IconedButton";
-import { Status } from "../../../enum/status";
+import DropDownOption from './DropDownOption/index';
+import StatusUpdate from '../../OneTime/statusUpdate/index';
+import { IconedButton } from "../../OneTime/IconedButton";
+import { Status } from '../../../enum/status';
 
 import ChevronDownIcon from "../../Icons/ChevronDownIcon/index";
 import "./DropDown.css";

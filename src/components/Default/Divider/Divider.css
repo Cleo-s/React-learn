@@ -1,0 +1,49 @@
+.divider {
+   color: #000;
+}
+
+.divider.x {
+   width: 100%;
+   height: 4px;
+}
+
+.divider.y {
+   width: 4px;
+   height: 100%;
+}
+
+.divider.horizontal {
+   width: 100%;
+   height: 1px;
+
+   background-color: #64698d;
+
+   position: absolute;
+
+   top: 80px;
+}
+
+.divider.vertical {
+   width: 1px;
+   height: 100%;
+
+   background-color: #64698d;
+
+   position: absolute;
+   left: 300px; 
+}
+
+.divider.horizontal-header {
+   width: 100%;
+   height: 1px;
+
+   background-color: #64698d;
+
+   position: absolute;
+
+   top: 42px;
+   left: 0;
+
+   z-index: 1;
+}
+

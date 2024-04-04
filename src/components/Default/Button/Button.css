@@ -55,3 +55,47 @@
       outline: none;
    }
 }
+
+.pending-dropdown-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border: 0.1rem solid #000;
+   border-radius: 0.15rem;
+
+   background-color: #f3f396;
+}
+
+.working-dropdown-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border: 0.1rem solid #000;
+   border-radius: 0.15rem;
+
+   background-color: #96d7f3;
+}
+
+.done-dropdown-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border: 0.1rem solid #000;
+   border-radius: 0.15rem;
+
+   background-color: #aef396;
+}
+
+.cancelled-dropdown-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border: 0.1rem solid #000;
+   border-radius: 0.15rem;
+
+   background-color: #f3a096;
+}

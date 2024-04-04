@@ -1,21 +1,17 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-import Input from "../../../DefaultComponents/Input/index";
+import Input from "../../../Default/Input/index";
 import DropDown from "../../DropDown/index";
 
 import "./Task.css";
 
 import TrashBinIcon from "../../../Icons/TrashBinIcon/index";
-import { IconedButton } from "../../../OneTimeComponents/IconedButton";
-import { Divider } from "../../../DefaultComponents/Divider";
+import { IconedButton } from "../../../OneTime/IconedButton";
+import { Divider } from "../../../Default/Divider";
 
 function Task({ tasks, setTasks, index, task }) {
   const [openedDropDown, setOpenedDropDown] = useState(false);
-
-  useEffect(() => {
-    console.log(task.checked);
-  }, [task]);
 
   const handleTaskDelete = (index) => {
     const updatedTasks = [...tasks];
