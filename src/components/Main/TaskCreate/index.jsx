@@ -1,7 +1,7 @@
 import React from "react";
 
 import './TaskCreate.css';
-import '../../Fonts/Font.css';
+import '../../../Fonts/Font.css'; 
 
 import Button from "../../Default/Button/index";
 import Input from "../../Default/Input/index";

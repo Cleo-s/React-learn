@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: flex-start;
 
-    min-height: 700px;
+    min-height: 94.4%;
     width: 300px;
 
     position: absolute;
@@ -25,7 +25,7 @@
     width: 100%;
     height: 7.5%;
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Scilla-Italic';
     font-size: 30px;
     color: rgba(101,150,165,255);
 

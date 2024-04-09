@@ -5,6 +5,7 @@ import Input from "../../../Default/Input/index";
 import DropDown from "../../DropDown/index";
 
 import "./Task.css";
+import "../../../../Fonts/Font.css";
 
 import TrashBinIcon from "../../../Icons/TrashBinIcon/index";
 import { IconedButton } from "../../../OneTime/IconedButton";

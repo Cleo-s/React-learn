@@ -2,7 +2,7 @@ import React from "react";
 
 import './IconedButton.css';
 
-export const IconedButton = ({ onClick, icon, disabled, classname}) => {
+export const IconedButton = ({ onClick, icon, disabled, classname, label}) => {
    const handleClick = (e) => {
       e.preventDefault();
 
@@ -15,7 +15,7 @@ export const IconedButton = ({ onClick, icon, disabled, classname}) => {
          className={`iconed-button ${classname ?? ''}`}
          disabled={disabled}
       >
-         {icon}
+         {icon} {label && label}
       </button>
    );
 }

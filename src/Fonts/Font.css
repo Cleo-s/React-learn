@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Scilla-Regular';
+    src: url(./Scilla/Scilla\ Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Scilla-Italic';
+    src: url(./Scilla/Scilla\ Regular\ Italic.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Scilla-Narrow';
+ 
+    src: url(./Scilla/Scilla\ Narrow.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Scilla-Narrow-Italic';
+    src: url(./Scilla/Scilla\ Narrow\ Italic.otf) format('opentype');
+}
